@@ -161,12 +161,40 @@ body {
 .resume {
     width: inherit;
     height: 300px;
-    font-size: 120px;
-    border-bottom: 5px solid grey;
+    font-size: 55px;
+    margin-top: 130px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.resume a {
+    font-size: 78px;
+    color: lime;
 }
 
 .contact {
+    display: flex;
     width: inherit;
     height: 300px;
-    font-size: 120px;
+    font-size: 55px;
+    margin-top: 130px;
+    margin-left: 200px;
+    flex-wrap: wrap;
+    top: 0;
+    justify-content: center;
+}
+
+.contact li {
+    font-size: 40px;
+    padding: 10px 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.contact h5 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 55px;
+    margin-left: 50px;
 }
