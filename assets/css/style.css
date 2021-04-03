@@ -6,11 +6,12 @@
   }
   
 
-header h1 {
+header h1 a {
    font-weight: bold;
    margin: 0;
    font-size: 70px;
    margin-left: 50px;
+   color: rgba(119, 119, 228, 0.39);
 }
 
 header li {
@@ -21,6 +22,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    color: rgba(119, 119, 228, 0.39);
 }
 
 header {
@@ -28,9 +30,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    top: 0;
     background-image: url();
     height: 100px;
+    position: absolute;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header nav {
@@ -57,29 +63,34 @@ body {
     background-color: rgb(19, 26, 48);
 }
 .hero {
-    position: relative;
+    display: grid;
+    grid-template-columns: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+    /*position: relative;*/
     background-image: url(../images/space-again.jpg);
     width: inherit;
     height: 400px;
 }
 
 .hero img {
+    display: grid;
+    grid-column-start: row1-start 1;
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    position: absolute;
-    bottom: 60px;
+    /*position: absolute;*/
+    bottom: 300px;
     margin-left: 80px;
-    border: 8px solid rgb(10, 30, 94);
+    border: 8px solid rgb(53, 53, 175);
+    margin-top: 45px;
 
 }
 
 .hero p {
     font-size: 100px;
-    position: absolute;
-    bottom: 40px;
-    right: 0;
-    margin-right: 20px;
+    margin-top: 250px;
+    margin-left: 100px;
+    grid-column-end: third-line 6;
+    color: rgb(53, 53, 175);
 }
 
 .about-me div {
@@ -103,46 +114,77 @@ body {
     font-size: 55px;
     text-align: left;
     margin-top: 100px;
+    color: rgba(119, 119, 228, 0.39);
 }
 
 .about-me p {
     margin-top: 100px;
     font-size: 24px;
-    color: red;
+    color: rgb(53, 53, 175);
+}
+
+.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: center;
+    margin-left: 38px;
 }
 
 .projects div {
-    display: flex;
+  /*  display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-around;
-    border-top: 5px solid grey;
+    align-content: space-around;*/
 
 }
 
 .projects img {
     height: 250px;
     width: 350px;
-    border: 5px solid grey;
+    border: 5px solid rgba(119, 119, 228, 0.39);
     margin-left: 50px;
     margin-bottom: 50px;
     margin-top: 100px;
 }
+
+.box a:hover {
+    background-color: transparent;
+} 
+
 .img-projects {
-    display: flex;
+   /* display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
-    justify-content: flex-end;
-    border-bottom: 5px solid grey;
-    
-    
+    justify-content: flex-end;*/  
+}
+
+.box {
+   position: relative;
+   text-align: center;
+   color: teal;
+}
+
+.text-r {
+    background-color: rgba(119, 119, 228, 0.39);
+    position: absolute;
+    font-size: 35px;
+    bottom: 89px;
+    left: 55px;
+}
+
+.text-r p {
+    font-size: 20px;
 }
 
 .img-projects img {
     height: 250px;
     width: 350px;
-    border: 5px solid grey;
     margin-left: 50px;
     margin-right: 65px;
     margin-bottom: 50px;
@@ -156,6 +198,7 @@ body {
     text-align: left;
     margin-top: 100px;
     margin-left: 100px;
+    color: rgba(119, 119, 228, 0.39);
 }
 
 .resume {
@@ -165,11 +208,12 @@ body {
     margin-top: 130px;
     margin-left: 200px;
     text-align: center;
+   
 }
 
 .resume a {
     font-size: 78px;
-    color: lime;
+    color: rgba(119, 119, 228, 0.39);
 }
 
 .contact {
@@ -188,8 +232,7 @@ body {
     font-size: 40px;
     padding: 10px 15px;
     justify-content: space-between;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 
 .contact h5 {
@@ -197,4 +240,9 @@ body {
     margin: 0;
     font-size: 55px;
     margin-left: 50px;
+    color: rgba(119, 119, 228, 0.39);
+}
+
+.contact a {
+    color: rgba(119, 119, 228, 0.39);
 }
