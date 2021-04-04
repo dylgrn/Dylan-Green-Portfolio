@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+}
 
 * {
     box-sizing: border-box;
@@ -95,6 +98,7 @@ body {
 
 .about-me div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
     margin-bottom: 100px;
@@ -245,4 +249,133 @@ body {
 
 .contact a {
     color: rgba(119, 119, 228, 0.39);
+}
+
+@media screen and (max-width: 980px) {
+    .display-flex {
+        justify-content: space-around;
+    }
+
+    header nav ul li a {
+        font-size: 22px;
+    }
+
+    .about-me p {
+        font-size: 15px;
+    }
+
+    .resume a {
+        margin-right: 150px;
+    }
+
+    .contact h5 {
+        margin-right: 200px;
+    }
+
+    .contact a {
+        margin-right: 200px;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    header nav ul li a {
+        margin-left: 75px;
+        font-size: 15px;
+    }
+
+    .hero {
+        width: 780px;
+    }
+
+    .hero img {
+        margin-left: 20px;
+    }
+
+    .hero p {
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+
+    header h1 a {
+        margin-left: 280px;
+        font-size: 40px;
+    }
+
+    .about-me h2 {
+        font-size: 50px;
+    }
+
+    .flex {
+        margin-right: 40px;
+    }
+
+    .projects h3 {
+        margin-right: 50px;
+    }
+
+    .contact h5 {
+        font-size: 50px;
+    }
+}
+
+@media  screen and (max-width: 575px) {
+    header {
+        width: max-content;
+    }
+
+    header h1 a {
+        margin-right: 1px;
+        margin-left: auto;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+
+    .hero img {
+        grid-column-start: row1-end 1;
+        margin-left: 30px;
+    }
+    .about-me h2 {
+        font-size: 80px;
+        margin-left: 170px;
+    }
+
+    .about-me div p {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 180px;
+    }
+
+    .projects h3 {
+        font-size: 80px;
+        margin-left: 100pxpx;
+    }
+
+    .display-flex {
+        margin-left: 150px;
+    }
+
+    .flex {
+        margin-left: 185px;
+    }
+
+    .resume a {
+        font-size: 45px;
+        margin-left: 60px;
+        margin-right: 90px;
+    }
+
+    .contact h5 {
+        font-size: 40px;
+        margin-right: 40px;
+        margin-left: 25px;
+    }
+    .contact a {
+        text-align: center;
+        font-size: 35px;
+        margin-right: 50px;
+    }
 }
