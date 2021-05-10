@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -9,28 +10,22 @@
 <body>
 <div>
 <header>
-    <h1>
-    <a href="">My Portfolio</a>
-    </h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#my-acomplishments">About Me</a>
-            </li>
-
-            <li>
-                <a href="#my-projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#my-resume">Resume</a>
-            </li>
-
-            <li>
-                <a href="#my-contact">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#my-resume">Resume</a>
+              <a class="nav-link" href="#my-acomplishments">About Me</a>
+              <a class="nav-link" href="#my-projects">Projects</a>
+              <a class="nav-link" href="#my-contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 </header>
 <section class="hero">
     <img src="assets\images\me.jpg" alt="it's a me">
@@ -40,9 +35,10 @@
     <div>
     <h2>About Me</h2>
 <p>
-    fsdhflajsdhflsd dkfjsdkjfs;adkjf ;sdkjfskdjfk ;kjd;fkja;s kfkjdslfkj lkjfijflksdjflsdkjfsffffffffflkjflkfjlkjlkjfsdslk <br>
-    jhfkjsdhfksdhfisdbgkjng kjfngksjn kdjfg kjdgj kjnkjnsdkfjskjdn ksjdnfkj nksjdnfj nsjndfkj ksjdjskdsjknjk <br>
-    kdfgjsngjsdgksdjgskjgnskjdngksjndgkjsdkjsdkgjnkjkdjkdjkjkjskjkjkjkjnjdnj <br>
+    Hi, my name is Dylan and I'm a Fullstack Web Developer. <br>
+    I have always loved making things and solving problems. When I realized being a developer is a mixture of those two things I started <br>
+    to learn and fell in love. I enjoy writing code that makes functional and beautiful websites. I've learned so many things since I <br>
+    started this journey and am excited to learn so much more. <br>
 </p>
 </div>
 </section>
@@ -51,16 +47,16 @@
     <div class="display-flex">
     <h3>My Projects</h3>
     <div class="box">
-    <a href="https://dylgrn.github.io/run-buddy/"><img src="assets\images\Screenshot (2).png" alt="Run-Buddy"></a>
-    <div class="text-r"> <h5>Run-Buddy</h5><p>HTML/CSS</p></div>
+    <a href="https://christenson10.github.io/TexasParkWeather/"><img src="./assets/images/Screenshot (20).png" alt="Run-Buddy"></a>
+    <div class="text-r"> <h5>Texas Park Weather</h5><p>HTML/CSS/JavaScript</p></div>
     </div>
     <div class="box">
     <a href="https://dylgrn.github.io/robot-gladiators/"><img src="assets/images/Screenshot (4).png" alt="Robot-Gladiators"></a>
     <div class="text-r"><h5>Robot Gladiators</h5><p>JavaScript</p></div>
         </div>
         <div class="box">
-    <a href=""><img src="assets\images\Screenshot (6).png" alt="Future-Project-Placeholder"></a>
-    <div class="text-r"><h5>Future Project</h5><p>JavaScript</p></div>
+    <a href="https://dylgrn.github.io/run-buddy/"><img src="assets\images\Screenshot (2).png" alt="Future-Project-Placeholder"></a>
+    <div class="text-r"><h5>Run-Buddy</h5><p>HTML/CSS</p></div>
     </div>
     </div>
     <div class="flex">
