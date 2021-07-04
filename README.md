@@ -1,6 +1,6 @@
 # Dylan-Green-portfolio
 
-![image](https://user-images.githubusercontent.com/78700475/117582265-cf212080-b0c6-11eb-9c31-d93a9a08ea64.png)
+![image](https://user-images.githubusercontent.com/78700475/124395715-36c0aa00-dccb-11eb-98e0-49cd7075cd91.png)
 
 
 ## Purpose
